@@ -13,6 +13,7 @@ class CategoriesRepository implements ICategoriesRepository {
 
   create({ name, description }: ICreateCategoryDTO): void {
     const categorie = new Category();
+
     Object.assign(categorie, { name, description, created_at: new Date() });
 
     this.categories.push(categorie);
