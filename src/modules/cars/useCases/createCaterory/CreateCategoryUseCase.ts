@@ -10,7 +10,6 @@ class CreateCategoryUseCase {
 
   execute({ name, description }: IRequest): void {
     const categoryAlredyExist = this.categoriesRepository.findByName(name);
-    console.log("3");
     if (categoryAlredyExist) {
       throw new Error("Category Alredy exists!!");
     }
