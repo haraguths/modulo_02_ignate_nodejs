@@ -1,0 +1,30 @@
+-- lista containers de pé
+docker ps
+
+-- lista todos os containers
+docker ps -a
+
+-- remover containers
+docker rm [id - name]
+
+-- parar containers
+docker stop [id - name]
+
+-- rodar docker compose
+docker-compose up
+
+-- parar docker compose 
+docker-compose stop
+
+-- remover docker compose 
+docker-compose down
+
+-- iniciar docker-compose compose 
+docker-compose start
+
+-- acessar containers
+docker exec -it [id - nome] /bin/bach 
+sair ctrl + d
+
+-- acessar log em tempo real
+docker logs [id - nome] -f
