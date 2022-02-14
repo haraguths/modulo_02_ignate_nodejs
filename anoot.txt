@@ -28,3 +28,6 @@ sair ctrl + d
 
 -- acessar log em tempo real
 docker logs [id - nome] -f
+
+-- rodar migrations 
+yarn run v1.22.11
