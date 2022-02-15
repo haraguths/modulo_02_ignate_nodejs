@@ -10,8 +10,9 @@ docker rm [id - name]
 -- parar containers
 docker stop [id - name]
 
+-- *** composer
 -- rodar docker compose
-docker-compose up
+docker-compose up -d
 
 -- parar docker compose 
 docker-compose stop
@@ -28,6 +29,9 @@ sair ctrl + d
 
 -- acessar log em tempo real
 docker logs [id - nome] -f
+
+-- CRIAR migration
+yarn typeorm migration:create -n CreateSpecifications
 
 -- rodar migrations 
 yarn typeorm migration:run
