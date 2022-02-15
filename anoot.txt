@@ -30,4 +30,4 @@ sair ctrl + d
 docker logs [id - nome] -f
 
 -- rodar migrations 
-yarn run v1.22.11
+yarn typeorm migration:run
